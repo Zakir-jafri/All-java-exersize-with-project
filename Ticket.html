@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro-Ticket</title>
+</head>
+<body>
+    <H1>Check your final Fair</H1>
+    <div>
+        <label for="gender">Choose your gender:</label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <div>
+        <label for="age">Choose your age:</label>
+        <input type="number">
+    </div>
+    <button>Check Fair</button>
+    <h2>After discount your finally fair is:</h2>
+    <H3 id="finalPrice"></H3>
+    <script>
+        let age = 4;
+        let gender = "female";
+        let finalDiscount;
+        if(age<=5) {
+            finalDiscount = 100;
+        }else if(age<=8){
+            finalDiscount = 50;
+        //   }else if(gender === female){
+            finalDiscount = 50;
+         }else if(age>=65){
+            finalDiscount = 30;
+        }else{
+            finalDiscount = 0;
+        }
+
+        console.log(`Your final price is:${finalDiscount}`)
+    </script>
+</body>
+</html>
