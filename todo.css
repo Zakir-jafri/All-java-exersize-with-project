@@ -1,0 +1,54 @@
+body{
+    font-family: Arial;
+    align-items: center;
+    padding: 150px;
+    padding-top: 5px;
+}
+
+#heading{
+    text-align: center;
+}
+
+.todo-up{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px; 
+    row-gap: 10px; 
+    margin-top: 10px;
+    align-items: center;
+}
+
+.inp{
+    font-size: 15px; padding: 10px 5px;
+}
+
+.btn-add{
+    background-color: rgb(17, 158, 55);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 0px;
+        cursor: pointer;
+}
+
+.todo-container{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px; 
+    row-gap: 10px; 
+    margin-top: 10px;
+    align-items: center;
+}
+
+.btn-dlt {
+    background-color: rgb(171, 44, 44);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0px;
+    cursor: pointer;
+};
+
+
+
+    
