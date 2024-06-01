@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+
+        // Array Method
+        // you can use when you have to use filtration
+        // syntax: array.filter((value, index)=> return true/false)
+
+        // let arr = [1,2,3,4,5,6,7,8,9];
+        // let odds = arr.filter((num, index) => {
+        //     if (num % 2 === 1) {
+        //         return true;
+        //     }else{
+        //         return false;
+        //     }
+        // })
+        // // second way
+        // let newOdds = arr.filter((num, index) => num % 2 === 1);
+
+        // console.log(odds);
+        // console.log(newOdds);
+
+        // Map Method 
+        // when you want to do transform
+        // syntax: array.map((value)=> return newValue)
+
+        let arr = [1,2,3,4,5,6,7,8,9];
+        let square = arr.map(num => num*num);
+        console.log(square);
+
+        // let num = [1,2,4,5,8,6,3,7,4];
+        // console.log(num);
+        // console.log(num[8]);
+        // console.log(num.length);
+
+        // //we can put number, boolean, string, null etc together in an array
+        // let example = [1, true, null, 'Zakir'];
+        // let obj = {
+        //     name : 'Zakir',
+        //     class : 12,
+        // };
+        // console.log(obj);
+        // // console.log(example);
+        // // console.log(example[3]);
+
+        // // we can check array with Array.isArray
+        // console.log(Array.isArray(example));
+        // console.log(Array.isArray(obj));
+
+        // we will see push/pop(add or move to end), shift/unshift(add or move to front), splice(add or remove elements), toString(convert to string), sort(sort element) and valueOf(get array itself)
+
+        // let number = [9,5,8];
+        // console.log(number);
+        // number.push(0);
+        // console.log(number);
+        // number.pop(0);
+        // console.log(number);
+        // number.shift();
+        // console.log(number);
+        // number.unshift(9);
+        // console.log(number);
+        // number.splice(1, 2); //delete two items  from first index
+        // console.log(number);
+        
+    //     let num = [1,2,4,5,8,6,3,7,4];
+    //     console.log(num);
+    //     console.log(num.toString());
+    //     console.log(typeof(num.toString()));
+    //     num.sort();
+    //     console.log(num);
+    //     console.log(num.valueOf());
+    // // Array also use refrence like object;
+    //     let num2 = num;
+    //     num2[2] = 54;
+    //     console.log(num);
+    //destructring also work for array
+                // let num = [1,2,4,5,8,6,3,7,4];
+                // let [a,b,c,d] = num;
+                // console.log(a + ' ' + b + ' ' + c + ' ' + d);
+    </script>
+</body>
+</html>
