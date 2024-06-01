@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Practice-Exercise</title>
+   <style>
+    .my-btn{
+    font-size: 15px;
+    height: 20px;
+    width: 80px;
+    background-color: rgb(212, 0, 255);
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+}
+.js-size-double {
+    
+    font-size: 30px;
+    height: 40px;
+    width: 160px;
+    background-color: rgb(212, 0, 255);
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+}
+   </style>
+</head>
+<body>
+    <button class="my-btn">click me</button>
+    <script>
+        let buttonElement = document.querySelector('.my-btn');
+        buttonElement.addEventListener('click', event => setTimeout(doubleTheSize, 2000));
+
+        function doubleTheSize(){
+            let buttonElement = document.querySelector('.my-btn');
+            buttonElement.classList.add('js-size-double');
+            buttonElement.classList.remove('my-btn');
+        }
+        // let multiply = function(num1, num2){
+        //     return (num1 * num2)
+        // }
+        // console.log(multiply(9,8));
+
+        // let printGreeting = () => console.log('Namaste')
+        // let runTwice = inputFunction => {
+        //     inputFunction();
+        //     inputFunction();             
+        // };
+
+        // runTwice(printGreeting);
+
+
+
+        // let buttonElement = document.querySelector('#my-btn');
+        // let behavior = event => console.log(`I'm Increased`);
+        // buttonElement.addEventListener('click', behavior);
+
+        let arr = [4,6,3,7,5,8,9];
+        let sum = 0;
+        arr.forEach(num => {
+            return sum += num;            
+        });
+        console.log(sum);
+
+        let squares = arr.map(num => num*num);
+        console.log(squares);
+        
+    </script>
+</body>
+</html>

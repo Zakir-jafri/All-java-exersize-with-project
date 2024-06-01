@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Advanced Function</title>
+</head>
+<button id="my-btn">Click me</button>
+<body>
+    <script>
+// For Each loop
+// let arr = [3,5,4,6,5,7];
+// // for ( let i = 0; i<arr.length; i++) {
+// //     console.log(arr[i]);
+// // };
+
+// arr.forEach(num => console.log(num));
+
+// if we are checking the [i] at that condition we use for loop
+// let arr = [3,5,4,6,5,7];
+// function search(arr, num) {
+//     for(let i = 0; i<arr.length; i++) {
+//         if(arr[i] === num) {
+//             console.log(`element found at:${i}`);
+//             return;
+//         }
+//     }
+//     console.log('Element was not found');
+// }
+
+// search(arr,7);
+
+// in the for each loop return consider as a countinue, so if you want to use return so you must use for loop only
+
+// let arr = [1,4,3,5,6,3,7,4,9];
+// arr.forEach(num => {
+//     if (num === 5) {
+//         return;
+//     }
+//     console.log(`visited:${num}`);
+// });
+
+
+    //     Event Listner
+    //      let buttonElement = document.querySelector('#my-btn');
+    //    let behavior = event => console.log(`I'm clicked`)
+//          buttonElement.addEventListener('click',behavior );
+// //you can add multiple event listner(more than one) on a button
+//         let printDate = event => console.log(new Date());
+//         buttonElement.addEventListener('click', printDate);
+//         buttonElement.removeEventListener('click', behavior);
+
+
+
+    //    let sum = function(num1, num2) {
+    //     return num1 + num2;
+    //     };
+    //     let newSum = sum;
+
+    //     console.log(sum(5,6));
+    //     console.log(newSum(51,7));
+
+    // let sum = function(num1, num2) {
+    //     return num1 + num2;
+    //     };
+
+    //     let newSum = sum;
+    //     // console.log(sum(4,5))
+    //     console.log(newSum((sum(4,5,)), 7))
+
+    //Arrow Function
+// if you are using arrrow then you can remove function
+    // let sum = /*function*/(num1, num2) =>{
+    //     return num1 + num2
+    // };
+    // console.log(sum(6,9));
+// if argument is single then can remove small breckets and with it return is in the single line you can also remove (reuturn & curly braces)
+    // let square = num => num * num
+    
+    // console.log(square(9))
+
+    //set time out
+
+    // let alarm = () => console.log(`Subah ho gayi hai mamu, Uth Jao.${new Date()}`);
+    // let timerId = setTimeout(alarm, 2000);
+    // console.log('Tik tik tik.....')
+    // clearTimeout(timerId);
+
+    // Set Interval
+
+    // let IntervalId = setInterval(alarm, 1000);
+    // setTimeout(() => clearInterval(IntervalId), 5000);
+    </script>
+</body>
+</html>
